@@ -1,24 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="weather.ttf">
+            <string>Flaticon</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxCocoa_RxSwift_WunderCast" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City's Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fdp-wa-L2H">
+                                <rect key="frame" x="20" y="60" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SId-jM-hgp">
+                                <rect key="frame" x="32" y="273" width="350" height="350"/>
+                                <fontDescription key="fontDescription" name="Flaticon" family="Flaticon" pointSize="220"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOB-wb-tWM">
+                                <rect key="frame" x="32" y="205" width="60" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aef-Lx-0L0">
+                                <rect key="frame" x="352" y="205" width="60" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeU-w4-Aqg">
+                                <rect key="frame" x="32" y="650" width="350" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="IJV-bT-bvs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BOB-wb-tWM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="0TF-RE-0Jf"/>
+                            <constraint firstItem="Fdp-wa-L2H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="1Ch-te-Ouu"/>
+                            <constraint firstItem="FeU-w4-Aqg" firstAttribute="top" secondItem="SId-jM-hgp" secondAttribute="bottom" constant="27" id="5a8-Aj-pCv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SId-jM-hgp" secondAttribute="bottom" constant="239" id="64b-7n-dAC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BOB-wb-tWM" secondAttribute="trailing" constant="322" id="7nF-fK-Che"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aef-Lx-0L0" secondAttribute="trailing" constant="2" id="BTU-cW-yl3"/>
+                            <constraint firstItem="BOB-wb-tWM" firstAttribute="top" secondItem="Fdp-wa-L2H" secondAttribute="bottom" constant="111" id="IEO-c0-Iwf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FeU-w4-Aqg" secondAttribute="trailing" constant="32" id="Jpo-Og-ooH"/>
+                            <constraint firstItem="SId-jM-hgp" firstAttribute="top" secondItem="BOB-wb-tWM" secondAttribute="bottom" constant="38" id="JzI-VT-YQc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fdp-wa-L2H" secondAttribute="bottom" constant="768" id="MGM-Ip-dAU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SId-jM-hgp" secondAttribute="trailing" constant="32" id="Twu-4I-no0"/>
+                            <constraint firstItem="Aef-Lx-0L0" firstAttribute="leading" secondItem="BOB-wb-tWM" secondAttribute="trailing" constant="260" id="XXW-FU-a9G"/>
+                            <constraint firstItem="FeU-w4-Aqg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="ZyD-zg-tbt"/>
+                            <constraint firstItem="SId-jM-hgp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="gUT-wi-hSh"/>
+                            <constraint firstItem="Fdp-wa-L2H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oxc-1L-aBt"/>
+                            <constraint firstItem="SId-jM-hgp" firstAttribute="top" secondItem="Fdp-wa-L2H" secondAttribute="bottom" constant="179" id="qQm-Q9-37p"/>
+                            <constraint firstItem="SId-jM-hgp" firstAttribute="top" secondItem="Aef-Lx-0L0" secondAttribute="bottom" constant="38" id="t2W-Bz-Bny"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fdp-wa-L2H" secondAttribute="trailing" constant="20" id="tA4-MO-4BJ"/>
+                            <constraint firstItem="Aef-Lx-0L0" firstAttribute="top" secondItem="Fdp-wa-L2H" secondAttribute="bottom" constant="111" id="tcx-li-1Ic"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="FeU-w4-Aqg" id="TbN-iW-xSB"/>
+                        <outlet property="humidityLabel" destination="Aef-Lx-0L0" id="7OL-ih-cw7"/>
+                        <outlet property="iconLabel" destination="SId-jM-hgp" id="p9V-Mh-xmC"/>
+                        <outlet property="searchCityName" destination="Fdp-wa-L2H" id="3Xr-4L-sCk"/>
+                        <outlet property="tempLabel" destination="BOB-wb-tWM" id="wyP-Jg-daN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="85.714285714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

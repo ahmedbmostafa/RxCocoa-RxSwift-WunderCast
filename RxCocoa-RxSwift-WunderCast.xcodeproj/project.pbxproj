@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		2C9E1FAD25A6F75500970D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E1FAB25A6F75500970D16 /* Main.storyboard */; };
 		2C9E1FAF25A6F75500970D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E1FAE25A6F75500970D16 /* Assets.xcassets */; };
 		2C9E1FB225A6F75500970D16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E1FB025A6F75500970D16 /* LaunchScreen.storyboard */; };
+		2C9E1FC225A6FCA100970D16 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E1FC125A6FCA100970D16 /* APIController.swift */; };
+		2C9E1FC925A6FD4C00970D16 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E1FC625A6FD4C00970D16 /* Appearance.swift */; };
+		2C9E1FCC25A6FD5200970D16 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E1FCB25A6FD5200970D16 /* Colors.swift */; };
+		2C9E1FD925A6FFDF00970D16 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E1FD825A6FFDF00970D16 /* LICENSE */; };
+		C41BAE8DB0F84C4A245A7725 /* Pods_RxCocoa_RxSwift_WunderCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8732966B3CD9A2E65A052D04 /* Pods_RxCocoa_RxSwift_WunderCast.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,14 @@
 		2C9E1FAE25A6F75500970D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C9E1FB125A6F75500970D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C9E1FB325A6F75500970D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C9E1FC125A6FCA100970D16 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		2C9E1FC625A6FD4C00970D16 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		2C9E1FCB25A6FD5200970D16 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		2C9E1FD825A6FFDF00970D16 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2C9E1FDB25A6FFE500970D16 /* weather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = weather.ttf; sourceTree = "<group>"; };
+		7A3C45A5B82AA49ACB11AB83 /* Pods-RxCocoa-RxSwift-WunderCast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxCocoa-RxSwift-WunderCast.release.xcconfig"; path = "Target Support Files/Pods-RxCocoa-RxSwift-WunderCast/Pods-RxCocoa-RxSwift-WunderCast.release.xcconfig"; sourceTree = "<group>"; };
+		7D784EDF46A9BB229A410898 /* Pods-RxCocoa-RxSwift-WunderCast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxCocoa-RxSwift-WunderCast.debug.xcconfig"; path = "Target Support Files/Pods-RxCocoa-RxSwift-WunderCast/Pods-RxCocoa-RxSwift-WunderCast.debug.xcconfig"; sourceTree = "<group>"; };
+		8732966B3CD9A2E65A052D04 /* Pods_RxCocoa_RxSwift_WunderCast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxCocoa_RxSwift_WunderCast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +44,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C41BAE8DB0F84C4A245A7725 /* Pods_RxCocoa_RxSwift_WunderCast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C8572C125A85C42008F79C1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2C9E1FC125A6FCA100970D16 /* APIController.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		2C9E1F9925A6F75500970D16 = {
 			isa = PBXGroup;
 			children = (
 				2C9E1FA425A6F75500970D16 /* RxCocoa-RxSwift-WunderCast */,
 				2C9E1FA325A6F75500970D16 /* Products */,
+				A449D1A32E886DA58C2709C6 /* Pods */,
+				6FB5C69710FAEB432CCFBBD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +82,9 @@
 			children = (
 				2C9E1FA525A6F75500970D16 /* AppDelegate.swift */,
 				2C9E1FA725A6F75500970D16 /* SceneDelegate.swift */,
+				2C9E1FD725A6FFC700970D16 /* Assets */,
+				2C9E1FCE25A6FD7700970D16 /* Utils */,
+				2C8572C125A85C42008F79C1 /* Network */,
 				2C9E1FA925A6F75500970D16 /* ViewController.swift */,
 				2C9E1FAB25A6F75500970D16 /* Main.storyboard */,
 				2C9E1FAE25A6F75500970D16 /* Assets.xcassets */,
@@ -67,6 +94,41 @@
 			path = "RxCocoa-RxSwift-WunderCast";
 			sourceTree = "<group>";
 		};
+		2C9E1FCE25A6FD7700970D16 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2C9E1FCB25A6FD5200970D16 /* Colors.swift */,
+				2C9E1FC625A6FD4C00970D16 /* Appearance.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2C9E1FD725A6FFC700970D16 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2C9E1FDB25A6FFE500970D16 /* weather.ttf */,
+				2C9E1FD825A6FFDF00970D16 /* LICENSE */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		6FB5C69710FAEB432CCFBBD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8732966B3CD9A2E65A052D04 /* Pods_RxCocoa_RxSwift_WunderCast.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A449D1A32E886DA58C2709C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D784EDF46A9BB229A410898 /* Pods-RxCocoa-RxSwift-WunderCast.debug.xcconfig */,
+				7A3C45A5B82AA49ACB11AB83 /* Pods-RxCocoa-RxSwift-WunderCast.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C9E1FB625A6F75500970D16 /* Build configuration list for PBXNativeTarget "RxCocoa-RxSwift-WunderCast" */;
 			buildPhases = (
+				D12E47E27697948F69E251EC /* [CP] Check Pods Manifest.lock */,
 				2C9E1F9E25A6F75500970D16 /* Sources */,
 				2C9E1F9F25A6F75500970D16 /* Frameworks */,
 				2C9E1FA025A6F75500970D16 /* Resources */,
+				7DF979623FEC287E80C536F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9E1FD925A6FFDF00970D16 /* LICENSE in Resources */,
 				2C9E1FB225A6F75500970D16 /* LaunchScreen.storyboard in Resources */,
 				2C9E1FAF25A6F75500970D16 /* Assets.xcassets in Resources */,
 				2C9E1FAD25A6F75500970D16 /* Main.storyboard in Resources */,
@@ -132,12 +197,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7DF979623FEC287E80C536F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxCocoa-RxSwift-WunderCast/Pods-RxCocoa-RxSwift-WunderCast-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxCocoa-RxSwift-WunderCast/Pods-RxCocoa-RxSwift-WunderCast-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxCocoa-RxSwift-WunderCast/Pods-RxCocoa-RxSwift-WunderCast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D12E47E27697948F69E251EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxCocoa-RxSwift-WunderCast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C9E1F9E25A6F75500970D16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9E1FC225A6FCA100970D16 /* APIController.swift in Sources */,
+				2C9E1FCC25A6FD5200970D16 /* Colors.swift in Sources */,
 				2C9E1FAA25A6F75500970D16 /* ViewController.swift in Sources */,
+				2C9E1FC925A6FD4C00970D16 /* Appearance.swift in Sources */,
 				2C9E1FA625A6F75500970D16 /* AppDelegate.swift in Sources */,
 				2C9E1FA825A6F75500970D16 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +393,7 @@
 		};
 		2C9E1FB725A6F75500970D16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D784EDF46A9BB229A410898 /* Pods-RxCocoa-RxSwift-WunderCast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +413,7 @@
 		};
 		2C9E1FB825A6F75500970D16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A3C45A5B82AA49ACB11AB83 /* Pods-RxCocoa-RxSwift-WunderCast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
